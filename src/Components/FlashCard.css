@@ -16,7 +16,7 @@
   }
   
   .card-front {
-    background-color: #add8e6; /* White background for the front */
+    background-color: #ced7e0; /* White background for the front */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -24,7 +24,7 @@
   }
   
   .card-back {
-    background-color: #add8e6; /* Light blue for the back */
+    background-color: #ced7e0; /* Light blue for the back */
     transform: rotateY(180deg); /* Flipped by default */
     display: flex;
     flex-direction: column;

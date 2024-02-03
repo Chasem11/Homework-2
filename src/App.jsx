@@ -4,8 +4,15 @@ import './App.css';
 
 const cardPairs = [
   { question: 'What is the closest planet to the Sun?', answer: 'Mercury!', imageUrl:"https://science.nasa.gov/wp-content/uploads/2023/11/mercury-messenger-globe-pia15162.jpg" },
-  { question: 'Venus', answer: 'Hottest planet in our solar system.', imageUrl:"" },
-  // Add more planets here
+  { question: 'What is the largest planet in the solar system?', answer: 'Jupiter!', imageUrl:"https://upload.wikimedia.org/wikipedia/commons/thumb/8/84/Hubble_Visible_View_of_Jupiter.jpg/322px-Hubble_Visible_View_of_Jupiter.jpg" },
+  { question: 'What is the hottest planet in the solar system?', answer: 'Venus!', imageUrl:"https://science.nasa.gov/wp-content/uploads/2023/11/mercury-messenger-globe-pia15162.jpg" },
+  { question: 'What is the denset object in the universe?', answer: 'Mercury!', imageUrl:"https://science.nasa.gov/wp-content/uploads/2023/11/mercury-messenger-globe-pia15162.jpg" },
+  { question: 'What is the coldest planet in the solar system?', answer: 'Mercury!', imageUrl:"https://science.nasa.gov/wp-content/uploads/2023/11/mercury-messenger-globe-pia15162.jpg" },
+  { question: 'What planet is farthest from the sun?', answer: 'Mercury!', imageUrl:"https://science.nasa.gov/wp-content/uploads/2023/11/mercury-messenger-globe-pia15162.jpg" },
+  { question: 'What ?', answer: 'Mercury!', imageUrl:"https://science.nasa.gov/wp-content/uploads/2023/11/mercury-messenger-globe-pia15162.jpg" },
+  { question: 'What is the closest planet to the Sun?', answer: 'Mercury!', imageUrl:"https://science.nasa.gov/wp-content/uploads/2023/11/mercury-messenger-globe-pia15162.jpg" },
+  { question: 'What is the closest planet to the Sun?', answer: 'Mercury!', imageUrl:"https://science.nasa.gov/wp-content/uploads/2023/11/mercury-messenger-globe-pia15162.jpg" },
+  { question: 'What is the closest planet to the Sun?', answer: 'Mercury!', imageUrl:"https://science.nasa.gov/wp-content/uploads/2023/11/mercury-messenger-globe-pia15162.jpg" },
 ];
 
 function App() {

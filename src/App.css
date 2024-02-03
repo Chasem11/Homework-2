@@ -15,7 +15,7 @@ body, html {
   align-items: center;
   justify-content: center;
   min-height: 100vh;
-  background: rgba(255, 255, 255, 0.8); /* Semi-transparent white background */
+  background-image: linear-gradient(to right top, #062c43, #2b5067, #4f788d, #74a1b4, #9ccddc);
   padding: 50px;
 }
 
