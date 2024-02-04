@@ -2,8 +2,7 @@
 body, html {
   margin: 0;
   padding: 0;
-  font-family: 'Arial', sans-serif; /* or any sans-serif font you prefer */
-  background-image: url('path/to/your/background-image.jpg'); /* add your background image here */
+  font-family: 'Arial', sans-serif;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -20,12 +19,12 @@ body, html {
 }
 
 h1 {
-  color: #333; /* Dark grey color */
+  color: black;
   margin-bottom: 10px;
 }
 
 p {
-  color: #666; /* Light grey color */
+  color: black;
   margin-bottom: 20px;
 }
 

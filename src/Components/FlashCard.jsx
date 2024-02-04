@@ -1,8 +1,12 @@
-import React, { useState } from 'react';
-import './FlashCard.css'; // Make sure to import your CSS file
+import React, { useState, useEffect } from 'react';
+import './FlashCard.css';
 
 function FlashCard({ card }) {
   const [showAnswer, setShowAnswer] = useState(false);
+
+  useEffect(() => {
+    setShowAnswer(false);
+  }, [card]);
 
   return (
     <div className={`flashcard ${showAnswer ? 'show-answer' : ''}`} onClick={() => setShowAnswer(!showAnswer)}>

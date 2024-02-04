@@ -34,11 +34,11 @@
   }
   
   .flashcard.show-answer .card-front {
-    transform: rotateY(180deg); /* Flip to back on click */
+    transform: rotateY(180deg);
   }
   
   .flashcard.show-answer .card-back {
-    transform: rotateY(0deg); /* Revert flip to show this side */
+    transform: rotateY(0deg);
   }
   
   .planet-image {
