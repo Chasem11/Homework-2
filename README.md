@@ -30,7 +30,7 @@ The following **additional** features are implemented:
 
 Here's a walkthrough of implemented required features:
 
-<img src='http://i.imgur.com/link/to/your/gif/file.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+![Video Walkthrough](https://github.com/COP4808-Spring2024-Full-Stack-Webdev/hw1-Chasem11/blob/main/my-vite-app/src/assets/8dswhp.gif?raw=true)
 
 <!-- Replace this with whatever GIF tool you used! -->
 GIF created with ...  
