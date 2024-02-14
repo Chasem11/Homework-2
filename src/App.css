@@ -19,59 +19,90 @@ body, html {
 }
 
 h1 {
-  color: black;
+  color: #fff;
+  font-size: 2.5em;
   margin-bottom: 10px;
 }
 
 p {
-  color: black;
+  color: #fff;
   margin-bottom: 20px;
 }
 
 .flashcard {
-  border: none;
   background-color: #fff;
   box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-  margin: 20px;
-  padding: 40px;
   border-radius: 10px; 
-  width: 300px; 
-  height: 200px; 
+  width: 350px; 
+  height: 250px; 
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   position: relative;
-}
-
-button {
-  border: none;
-  background-color: #007bff;
-  color: white;
-  padding: 10px 15px;
-  margin: 10px;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-}
-
-button:hover {
-  background-color: #0056b3;
+  transition: transform 0.3s;
 }
 
 .flashcard img {
-  max-width: 100%;
+  width: 90%;
+  height: auto;
   margin-bottom: 20px; 
+  border-radius: 5px;
 }
 
 .card-info {
   text-align: center; 
-  margin-bottom: 20px;
+  font-size: 1.2em;
 }
 
 .navigation-buttons {
   display: flex;
   justify-content: space-between;
-  max-width: 300px;
+  width: 100%;
   margin-top: 20px;
+}
+
+button {
+  background-color: #28a745; /* Bootstrap success color for visual consistency */
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-weight: bold;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #218838;
+}
+
+button:focus {
+  outline: none; /* Removes the outline to maintain a clean look */
+  box-shadow: 0 0 0 0.2rem rgba(40, 167, 69, 0.5);
+}
+
+input[type='text'] {
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ced4da;
+  margin-right: 10px;
+  width: calc(100% - 130px); /* Adjust width based on sibling button */
+}
+
+/* Optional: Add animation for card flip */
+.flashcard {
+  perspective: 1000px;
+}
+
+.card-side {
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+}
+
+.flashcard.show-answer .card-front {
+  transform: rotateY(180deg);
+}
+
+.flashcard.show-answer .card-back {
+  transform: rotateY(0deg);
 }
