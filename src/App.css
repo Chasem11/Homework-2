@@ -29,27 +29,6 @@ p {
   margin-bottom: 20px;
 }
 
-.flashcard {
-  background-color: #fff;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-  border-radius: 10px; 
-  width: 350px; 
-  height: 250px; 
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  position: relative;
-  transition: transform 0.3s;
-}
-
-.flashcard img {
-  width: 90%;
-  height: auto;
-  margin-bottom: 20px; 
-  border-radius: 5px;
-}
-
 .card-info {
   text-align: center; 
   font-size: 1.2em;
@@ -89,20 +68,6 @@ input[type='text'] {
   width: calc(100% - 130px); /* Adjust width based on sibling button */
 }
 
-/* Optional: Add animation for card flip */
-.flashcard {
-  perspective: 1000px;
-}
-
-.card-side {
-  transition: transform 0.6s;
-  transform-style: preserve-3d;
-}
-
-.flashcard.show-answer .card-front {
-  transform: rotateY(180deg);
-}
-
-.flashcard.show-answer .card-back {
-  transform: rotateY(0deg);
+.Flashcard-div {
+  width: 100%;
 }

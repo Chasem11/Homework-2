@@ -25,13 +25,13 @@
 
 .card-front {
   background-color: #ced7e0;
-  z-index: 2; /* Ensures front card is above the back */
+  z-index: 2; 
 }
 
 .card-back {
   background-color: #ced7e0;
   transform: rotateY(180deg);
-  z-index: 1; /* Ensures back card is below the front */
+  z-index: 1;
 }
 
 .flashcard.show-answer .card-front {
@@ -43,9 +43,9 @@
 }
 
 .planet-image {
-  width: 1%; /* or 100% depending on desired padding around the image */
+  width: 60%; 
   height: auto;
-  object-fit: contain; /* This will ensure the image maintains its aspect ratio */
+  object-fit: contain; 
   border-radius: 10px;
 }
 
@@ -58,7 +58,7 @@
 .answer-feedback {
   padding: 10px;
   margin-top: 10px;
-  width: 100%;
+  width: 90%;
   text-align: center;
 }
 
@@ -73,7 +73,7 @@
 input[type='text'] {
   padding: 10px;
   margin: 10px 0;
-  width: calc(100% - 20px); /* Adjust input width */
+  width: calc(100% - 20px); 
   border: 1px solid #ddd;
   border-radius: 5px;
 }
@@ -93,11 +93,10 @@ button:hover {
 }
 
 .flashcard.correct-guess {
-  box-shadow: 0 0 10px 4px #28a745; /* Green glow */
+  box-shadow: 0 0 10px 4px #28a745;
 }
 
-/* Glow effect when answer is incorrect */
 .flashcard.incorrect-guess {
-  box-shadow: 0 0 10px 4px #dc3545; /* Red glow */
+  box-shadow: 0 0 10px 4px #dc3545; 
 }
 
