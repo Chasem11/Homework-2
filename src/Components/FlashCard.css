@@ -1,8 +1,8 @@
 /* FlashCard.css */
 
 .flashcard {
-  width: 500px;
-  height: 350px;
+  width: 600px;
+  height: 480px;
   perspective: 1000px;
   margin: 20px auto;
   transition: box-shadow 0.3s;
@@ -47,12 +47,21 @@
   height: auto;
   object-fit: contain; 
   border-radius: 10px;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2); 
+  border: 2px solid #333; 
+  transition: all 0.3s ease; 
+  filter: brightness(90%); 
+}
+
+.planet-image:hover {
+  transform: scale(1.05); 
+  filter: brightness(100%);
 }
 
 .card-content {
   padding: 10px;
   text-align: center;
-  font-size: 1em;
+  font-size: 28px;
 }
 
 .answer-feedback {

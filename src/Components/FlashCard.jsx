@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import './FlashCard.css';
 
-function FlashCard({ card, onAnswerCheck }) { // Destructure onAnswerCheck here
+function FlashCard({ card, onAnswerCheck }) {
   const [showAnswer, setShowAnswer] = useState(false);
   const [userGuess, setUserGuess] = useState('');
   const [isCorrect, setIsCorrect] = useState(null);
@@ -17,7 +17,7 @@ function FlashCard({ card, onAnswerCheck }) { // Destructure onAnswerCheck here
     const guessIsCorrect = userGuess.toLowerCase() === card.answer.toLowerCase();
     setIsCorrect(guessIsCorrect);
     setShowAnswer(true);
-    onAnswerCheck(guessIsCorrect); // Make sure this matches the prop passed from App
+    onAnswerCheck(guessIsCorrect);
   };
 
   return (
@@ -41,7 +41,7 @@ function FlashCard({ card, onAnswerCheck }) { // Destructure onAnswerCheck here
         <div className="card-content">{card.answer}</div>
         {showAnswer && (
           <div className={`answer-feedback ${isCorrect ? 'correct' : 'incorrect'}`}>
-            {isCorrect ? 'Correct!' : 'Incorrect!'}
+            {isCorrect ? 'Correct!' : 'Incorrect! The answer was ' + card.answer}
           </div>
         )}
       </div>

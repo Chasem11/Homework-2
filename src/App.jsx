@@ -17,9 +17,9 @@ const cardPairs = [
 
 function App() {
   const [cardIndex, setCardIndex] = useState(0);
-  const [cards, setCards] = useState([...cardPairs]); // Copy cardPairs into a new state
+  const [cards, setCards] = useState([...cardPairs]); 
   const [quizStarted, setQuizStarted] = useState(false);
-  const [correctStreak, setCorrectStreak] = useState(0); // State to track correct answer streak
+  const [correctStreak, setCorrectStreak] = useState(0); 
 
   const handleStart = () => {
     setQuizStarted(true);
@@ -39,22 +39,22 @@ function App() {
   const shuffleCards = () => {
     let shuffledCards = [...cards].sort(() => 0.5 - Math.random());
     setCards(shuffledCards);
-    setCardIndex(0); // Display the first card from the shuffled deck
+    setCardIndex(0); 
   };
 
-  // Callback to handle when an answer is checked in the FlashCard component
+
   const handleAnswerCheck = (isCorrect) => {
     if (isCorrect) {
       setCorrectStreak(correctStreak + 1);
     } else {
-      setCorrectStreak(0); // Reset streak if the answer is wrong
+      setCorrectStreak(0);
     }
   };
 
   return (
     <div className="app">
-      <h1>The Ultimate Plant Parent!</h1>
-      <p>How good of a plant parent are you? Test all of your planty knowledge here!</p>
+      <h1>Solar System Flash Cards!</h1>
+      <p>How much do you know about the planets? Test all of your planet knowledge here!</p>
       <p>Number of cards: {cards.length}</p>
       {!quizStarted ? (
         <button onClick={handleStart}>Start!</button>
@@ -63,7 +63,7 @@ function App() {
           <div className="FlashCard-div">
             <FlashCard card={cards[cardIndex]} onAnswerCheck={handleAnswerCheck} />
           </div>
-          <p>Correct Streak: {correctStreak}</p> {/* Display the correct answer streak */}
+          <p>Correct Streak: {correctStreak}</p> {/* Display the correct streak */}
           <div className="navigation">
             <button onClick={handlePrevCard}>&lt; Back</button>
             <button onClick={handleNextCard}>Next &gt;</button>
