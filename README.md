@@ -1,26 +1,26 @@
-# Web Development Project 2 - *FlashCard App*
+# Web Development Project 3 - *FlashCard App*
 
 Submitted by: **Chase Moffat**
 
-This web app: My project is a set of 10 flashcards containing facts about the solar system and space. My project works by defining an array of dictionaries that store the information to display on the flashcards. My project utilizes use state to intially start at index zero, at the bottom of the page there are buttons that can flip to the next card. When the button is pressed a random index is calculated and is then passed to the usestate to display the card at that index. I also have a FlashCard component that takes the array of dictionaries as a prop. The inforamtion from the prop is then displayed in the FlashCard component. In the FlashCard component I also utilize the use state fucntion to initially show the question side of the card. When the card is clicked the use state is updated to then show the back side of the card. I also have a use effect function to make sure each card starts with the question showing. 
+This web app: This web app: My project is a set of 10 flashcards containing facts about the solar system and space. My project works by defining an array of dictionaries that store the information to display on the flashcards. My project initializes with a start button for the user to press, when the button is pressed the first card is shown. My project utilizes use state to intially start at index zero, at the bottom of the page there are buttons that can flip to the next card. There is also a button for the user to shuffle the deck andd randomize the order of the cards. I also have a FlashCard component that takes the array of dictionaries as a prop. The inforamtion from the prop is then displayed in the FlashCard component. In the FlashCard component I also utilize the use state fucntion to initially show the question side of the card. The user can then input their answer inside the text box. When the answer is submitted the back side of the card shows displaying if the user was correct or incorrect in their guess. I also have a use effect function to make sure each card starts with the question showing.
 
-Time spent: **3** hours spent in total
+Time spent: **3.5** hours spent in total
 
 ## Required Features
 
 The following **required** functionality is completed:
 
-- [x] **The title of the card set and some information about it, such as a short description and the total number of cards are displayed**
-- [x] **A single card at a time is displayed, only showing one of the components of the information pair**
-- [x] **A list of card pairs is created**
-- [x] **Clicking on the card shows the corresponding component of the information pair**
-- [x] **Clicking the next button displays a random new card**
+- [x] **The user can enter their guess in a box before seeing the flipside of the card**
+- [x] **Clicking on a submit button shows visual feedback about whether the answer was correct or incorrect**
+- [x] **A back button is displayed on the card and can be used to return to the previous card in a set sequence**
+- [x] **A next button is displayed on the card and can be used to navigate to the next card in a set sequence**
 
 The following **optional** features are implemented:
 
-- [x] Cards contains images in addition to or in place of text
-- [ ] Cards have different visual styles such as color based on their category
-  - [ ] *visual style implemented*
+- [x] A shuffle button is used to randomize the order of the cards
+- [ ] A user's answer may be counted as correct even when it is slightly different from the target answer
+- [x] A counter displays the user's current and longest streak of correct responses
+- [ ] A user can mark a card that they have mastered and have it removed from the pool of answers as well as added to a list of mastered cards
 
 The following **additional** features are implemented:
 
@@ -28,9 +28,9 @@ The following **additional** features are implemented:
 
 ## Video Walkthrough
 
-Here's a walkthrough of implemented required features:
+Here's a walkthrough of implemented user stories:
 
-![Video Walkthrough](https://github.com/COP4808-Spring2024-Full-Stack-Webdev/hw2-Chasem11/blob/main/src/assets/Project2.gif?raw=true)
+![Video Walkthrough](https://github.com/COP4808-Spring2024-Full-Stack-Webdev/hw3-Chasem11/blob/main/src/assets/Project3.gif?raw=true)
 
 <!-- Replace this with whatever GIF tool you used! -->
 GIF created with ...  
