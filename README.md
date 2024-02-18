@@ -43,6 +43,8 @@ GIF created with ...
 
 Describe any challenges encountered while building the app.
 
+I had a challenge where the answer for the next card would show for a breif second when I went to the next question. I was not able to fix this problem. I tried editing  my css for the transitions but I couldnt get this bug to go away. 
+
 ## License
 
     Copyright [yyyy] [name of copyright owner]
