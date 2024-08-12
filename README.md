@@ -1,4 +1,4 @@
-# Web Development Project 3 - *FlashCard App*
+# Web Development Project 2 - *FlashCard App*
 
 Submitted by: **Chase Moffat**
 
